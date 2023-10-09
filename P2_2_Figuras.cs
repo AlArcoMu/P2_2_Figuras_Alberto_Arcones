@@ -16,25 +16,25 @@ public class P2_2_Figuras
     Circulo circulo = new Circulo(Rojo, 4.3);
     TrianguloEquilatero triangulo = new TrianguloEquilatero(Rojo, 6.8);
     Console.WriteLine(rectangulo);
-    Console.WriteLine($"Área del rectángulo: {rectangulo.GetArea()}");
+    Console.WriteLine($"Área del rectángulo: {rectangulo.GetArea():F3}");
 
     Console.WriteLine(circulo);
-    Console.WriteLine($"Área del círculo: {circulo.GetArea()}");
+    Console.WriteLine($"Área del círculo: {circulo.GetArea():F3}");
 
     Console.WriteLine(triangulo);
-    Console.WriteLine($"Área del triángulo equilátero: {triangulo.GetArea()}");
+    Console.WriteLine($"Área del triángulo equilátero: {triangulo.GetArea():F3}");
 
     rectangulo.BaseRectangulo = 10.0;
     circulo.Radio = 5.0;
     triangulo.LongitudLado = 8.2;
     Console.WriteLine(rectangulo);
-    Console.WriteLine($"Área del rectángulo: {rectangulo.GetArea()}");
+    Console.WriteLine($"Área del rectángulo: {rectangulo.GetArea():F3}");
 
     Console.WriteLine(circulo);
-    Console.WriteLine($"Área del círculo: {circulo.GetArea()}");
+    Console.WriteLine($"Área del círculo: {circulo.GetArea():F3}");
 
     Console.WriteLine(triangulo);
-    Console.WriteLine($"Área del triángulo equilátero: {triangulo.GetArea()}");
+    Console.WriteLine($"Área del triángulo equilátero: {triangulo.GetArea():F3}");
 
     /*
     Crear La lista para añadir las figuras
@@ -62,7 +62,7 @@ public class P2_2_Figuras
     foreach (Figura figura in lista_figuras)
     {
       Console.WriteLine(figura);
-      Console.WriteLine($"Área: {figura.GetArea()}");
+      Console.WriteLine($"Área: {figura.GetArea():F3}");
       Console.WriteLine();
     }
 
@@ -76,7 +76,7 @@ public class P2_2_Figuras
     foreach (Figura figura in lista_figuras)
     {
       Console.WriteLine(figura);
-      Console.WriteLine($"Área: {figura.GetArea()}");
+      Console.WriteLine($"Área: {figura.GetArea():F3}");
       Console.WriteLine();
     }
 
@@ -87,7 +87,7 @@ public class P2_2_Figuras
     {
       AreaTotal += figura.GetArea();
     }
-    Console.WriteLine($"ÁreaTotal: {AreaTotal}");
+    Console.WriteLine($"ÁreaTotal: {AreaTotal:F3}");
 
   }
 }
