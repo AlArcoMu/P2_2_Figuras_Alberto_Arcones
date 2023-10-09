@@ -12,6 +12,11 @@ public abstract class Figura
   }
 
   public abstract double GetArea();
+  //creo un metodo para cambiar el color
+  public void CambiarColor(Color nuevoColor)
+  {
+    _color = nuevoColor;
+  }
   public override string ToString()
   {
 

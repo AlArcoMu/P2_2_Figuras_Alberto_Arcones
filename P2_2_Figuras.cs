@@ -66,6 +66,19 @@ public class P2_2_Figuras
       Console.WriteLine();
     }
 
+    //Cambio color 
+    Color nuevoColor = new Color(245, 40, 145, 200);
+
+    foreach (Figura figura in lista_figuras)
+    {
+      figura.CambiarColor(nuevoColor);
+    }
+    foreach (Figura figura in lista_figuras)
+    {
+      Console.WriteLine(figura);
+      Console.WriteLine($"Área: {figura.GetArea()}");
+      Console.WriteLine();
+    }
 
   }
 
