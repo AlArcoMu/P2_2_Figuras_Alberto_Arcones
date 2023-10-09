@@ -14,7 +14,8 @@ public abstract class Figura
   public abstract double GetArea();
   public override string ToString()
   {
-    return $"Color: ({_color.Red}, {_color.Green}, {_color.Blue})";
+
+    return $"Color: ({_color.Red}, {_color.Green}, {_color.Blue}, {_color.Alpha})";
   }
 
 }
