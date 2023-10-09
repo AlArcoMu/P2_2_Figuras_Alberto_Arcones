@@ -80,6 +80,14 @@ public class P2_2_Figuras
       Console.WriteLine();
     }
 
-  }
+    //Suma de las areas totales
+    double AreaTotal = 0;
 
+    foreach (Figura figura in lista_figuras)
+    {
+      AreaTotal += figura.GetArea();
+    }
+    Console.WriteLine($"ÁreaTotal: {AreaTotal}");
+
+  }
 }
